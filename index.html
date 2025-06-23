@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+
+<html lang="EN">
+
+<head>
+    <title>Pinetour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanuman:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #9FC6DE;
+            height: 100%;
+        }
+        .typography-1 {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .English {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: #000000;
+        }
+
+        .Pure-magic {
+            font-family: Bebas Neue;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: rgba(232, 237, 242, 0.72);
+        }
+
+        .Awaits {
+            font-family: Bebas Neue;
+            font-weight: 400;
+            font-size: 250px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            align-items: flex-end;
+            color: rgba(253, 253, 254, 0.98);
+            text-size-adjust: 2px;
+            border-color: #FDFDFE;
+
+        }
+
+        .e2024 {
+            font-family: Hanuman;
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            align-items: flex-end;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .TAKK {
+            font-family: Bebas Neue;
+            font-weight: 400;
+            font-size: 37px;
+            line-height: 1.25;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgba(253, 253, 254, 0.8);
+            text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+            position: relative;
+            z-index: 10;
+            transition: color 1s;
+            width: 232px;
+        }
+
+        .TAKK1 {
+            background-color: rgba(41, 41, 41, 0.4);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 40px;
+            opacity: 0;
+            transition: opacity 300ms;
+        }
+
+
+        .eTAKK:hover .TAKK1 {
+            opacity: 1;
+            animation-timing-function: cubic-bezier(0.45, 1.45, 0.8, 1);
+            animation-duration: 300ms;
+        }
+
+        .eTAKK:hover .TAKK {
+            color: white;
+        }
+
+        .Pricing {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: #000000;
+
+        }
+
+        .Package {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: rgba(24, 24, 27, 0.7);
+            text-transform: capitalize;
+
+        }
+
+        .Sukhbaatar {
+            display: none;
+            z-index: 10;
+        }
+
+        .Day1 {
+            box-sizing: border-box;
+            border: 4px solid transparent;
+        }
+
+        .Day1:hover {
+            border: 4px solid white;
+        }
+
+        .Day1:hover .Sukhbaatar {
+            display: block;
+        }
+
+
+        .Amarbaysgalant {
+            display: none;
+            z-index: 10;
+        }
+
+        .Day2 {
+            box-sizing: border-box;
+            border: 4px solid transparent;
+        }
+
+        .Day2:hover {
+            border: 4px solid white;
+        }
+
+        .Day2:hover .Amarbaysgalant {
+            display: block;
+        }
+
+        .Khorgiin_togoo {
+            display: none;
+            z-index: 10;
+        }
+
+        .Day3 {
+            box-sizing: border-box;
+            border: 4px solid transparent;
+        }
+
+        .Day3:hover {
+            border: 4px solid white;
+        }
+
+        .Day3:hover .Khorgiin_togoo {
+            display: block;
+        }
+
+        .Terkhiin_tsagaan {
+            display: none;
+            z-index: 10;
+        }
+
+        .Day4 {
+            box-sizing: border-box;
+            border: 4px solid transparent;
+        }
+
+        .Day4:hover {
+            border: 4px solid white;
+        }
+
+        .Day4:hover .Terkhiin_tsagaan {
+            display: block;
+        }
+
+        .Khuvsgul {
+            display: none;
+            z-index: 10;
+        }
+
+        .Day5 {
+            box-sizing: border-box;
+            border: 4px solid transparent;
+        }
+
+        .Day5:hover {
+            border: 4px solid white;
+        }
+
+        .Day5:hover .Khuvsgul {
+            display: block;
+        }
+
+        .Item_text {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            color: #3F4145
+        }
+
+        .Social {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #6972B5;
+        }
+
+        .Budget {
+            box-shadow: 8px 8px 0px transparent, -8px -8px 0px transparent;
+        }
+
+        .Budget:hover {
+            box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(46, 65, 71, 0.4);
+        }
+
+        .Budget_button {
+            background-color: rgba(164, 209, 226, 1);
+        }
+
+        .Budget:hover .Budget_button {
+            background-color: rgba(24, 24, 27, 0.9);
+        }
+
+        .Budget_select_package {
+            color: #000000;
+        }
+
+        .Budget:hover .Budget_select_package {
+            color: #FAFAFA;
+        }
+
+        .Standard {
+            box-shadow: 8px 8px 0px transparent, -8px -8px 0px transparent;
+        }
+
+        .Standard:hover {
+            box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(46, 65, 71, 0.4);
+        }
+
+        .Standard_button {
+            background-color: rgba(164, 209, 226, 1);
+        }
+
+        .Standard:hover .Standard_button {
+            background-color: rgba(24, 24, 27, 0.9);
+        }
+
+        .Standard_select_package {
+            color: #000000;
+        }
+
+        .Standard:hover .Standard_select_package {
+            color: #FAFAFA;
+        }
+
+        .Luxury {
+            box-shadow: 8px 8px 0px transparent, -8px -8px 0px transparent;
+        }
+
+        .Luxury:hover {
+            box-shadow: 8px 8px 0px rgba(41, 114, 139, 0.25), -8px -8px 0px rgba(46, 65, 71, 0.4);
+        }
+
+        .Luxury_button {
+            background-color: rgba(164, 209, 226, 1);
+        }
+
+        .Luxury:hover .Luxury_button {
+            background-color: rgba(24, 24, 27, 0.9);
+        }
+
+        .Luxury_select_package {
+            color: #000000;
+        }
+
+        .Luxury:hover .Luxury_select_package {
+            color: #FAFAFA;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Hero -->
+        <section
+            style="width: 1440px; height: 773px; background:url(HeroImage.png); margin-left: auto; margin-right: auto;">
+            <!-- Deed taliin heseg -->
+            <header
+                style="width: 1204px; height: 43.5px; display: flex; justify-content: space-between; justify-self: center; padding-top: 30px;">
+                <img src="Icons/logo 1.png" alt="Tour">
+                <div
+                    style="width: 392px; height: 22px; display: flex; justify-content: center; align-items: center; gap: 24px; align-self: center;">
+                    <a class="typography-1" href="#" style="width: 100px; height: 22px;">Home</a>
+                    <a class="typography-1" href="#" style="width: 100px; height: 22px;">About</a>
+                    <a class="typography-1" href="#" style="width: 100px; height: 22px;">Contact</a>
+                    <a class="typography-1" href="#" style="width: 20px; height: 20px;"><img src="Icons/user.png"
+                            alt="user"></a>
+                </div>
+                <div
+                    style="width: 40px; height: 40px; border-radius: 24px; display: flex; align-items: center; justify-content: center; background-color: #FFFFFF; align-self: center;">
+                    <div class="English" style="width: 19px; height: 17px;">EN</div>
+                </div>
+            </header>
+            <!-- Pure magic awaits -->
+            <article
+                style="width: 618px; height: 394px; padding-bottom: 210px; padding-top: 95.5px; justify-self: center;">
+                <div class="Pure-magic" style="width: 618px; height: 80px;">PURE MAGIC</div>
+                <div class="Awaits" style="width: 618px; height: 250px;">AWAITS!</div>
+                <div class="e2024" style="width: 144px; height: 64px; justify-self: center;">2024</div>
+            </article>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section
+            style="width: 1440px; height: 500px; background: url(Location\ image.png); margin-left: auto; margin-right: auto; display: flex; align-items: center; justify-content: center;">
+            <figure
+                style="width: 1202px; height: 370px; gap: 40px; display: flex; align-items: center; justify-content: center;">
+                <div
+                    style="width: 275.49px; height: 370px; border-radius: 40px; background: linear-gradient(rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03)),  url(Hover_card/Terkhiin_tsagaan.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-color: rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03); box-shadow: 8px 8px 0 rgba(41, 114, 139, 0.25); ">
+                    <div class="eTAKK"
+                        style="position: relative; width: 275.49px; height: 370px; border-radius: 40px; box-shadow: -8px -8px 0 rgba(31, 114, 170, 0.46); display: flex; align-items: center; justify-content: center; ">
+                        <div
+                            style="width: 252px; height: 370px; display: flex; align-items: center; justify-content: center; ">
+                            <div class="TAKK" style="width: 232px; height: 88px;">TERKHIIN TSAGAAN LAKE</div>
+                            <div class="TAKK1"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    style="width: 275.49px; height: 370px; border-radius: 40px; background: linear-gradient(rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03)), url(Hover_card/Amarbaysgalant.png); background-repeat: no-repeat;background-position: center; background-color: rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03); background-size: cover; box-shadow: 8px 8px 0 rgba(41, 114, 139, 0.25); ">
+                    <div class="eTAKK"
+                        style="position: relative; width: 275.49px; height: 370px; border-radius: 40px; box-shadow: -8px -8px 0 rgba(31, 114, 170, 0.46); display: flex; align-items: center; justify-content: center;">
+                        <div
+                            style=" width: 252px; height: 370px; display: flex; align-items: center; justify-content: center; ">
+                            <div class="TAKK" style="width: 232px; height: 88px;">AMARBAYSGALANT MONASTERY</div>
+                            <div class="TAKK1"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    style="width: 275.49px; height: 370px; border-radius: 40px; background: linear-gradient(rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03)), url(Hover_card/Khuvsgul.png); background-repeat: no-repeat; background-position: center; background-color: rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03); background-size: cover; box-shadow: 8px 8px 0 rgba(41, 114, 139, 0.25); ">
+                    <div class="eTAKK"
+                        style="position: relative; width: 275.49px; height: 370px; border-radius: 40px; box-shadow: -8px -8px 0 rgba(31, 114, 170, 0.46); display: flex; align-items: center; justify-content: center;">
+                        <div
+                            style="width: 252px; height: 370px; display: flex; align-items: center; justify-content: center;">
+                            <div class="TAKK" style="width: 232px; height: 88px;">KHUVSGUL LAKE</div>
+                            <div class="TAKK1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="width: 275.49px; height: 370px; border-radius: 40px; background: linear-gradient(rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03)), url(Hover_card/Khorgiin_togoo.png); background-repeat: no-repeat; background-position: center; background-color: rgba(157, 184, 218, 0.2), rgba(34, 34, 34, 0.03); background-size: cover; box-shadow: 8px 8px 0 rgba(41, 114, 139, 0.25); ">
+                    <div class="eTAKK"
+                        style="position: relative; width: 275.49px; height: 370px; border-radius: 40px; box-shadow: -8px -8px 0 rgba(31, 114, 170, 0.46); display: flex; align-items: center; justify-content: center;">
+                        <div
+                            style=" width: 252px; height: 370px; display: flex; align-items: center; justify-content: center;">
+                            <div class="TAKK" style="width: 232px; height: 88px;">KHORGIIN TOGOO</div>
+                            <div class="TAKK1"></div>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </section>
+        <!-- Roadmap -->
+        <section
+            style="width: 1440px; height: 1022px; background: url(Roadmap\ image.png); margin-left: auto; margin-right: auto; position: relative;">
+            <article style="width: 1440px; height: 204px; display: flex; align-items: flex-end;">
+                <section style="width: 1440px; height: 85px;">
+                    <h1 style="margin: 0; width: 1440px; height: 51px; font-family: Inter; font-weight: 600; font-size: 42px; line-height: 100%; letter-spacing: 80%; 
+                    display: flex; justify-content: center; align-items: flex-end; color: #000000;">Destination of Our
+                        Agency</h1>
+                    <p
+                        style="margin: 0; width: 1440px; height: 24px; padding-top: 10px; font-family: Inter; font-weight: 500; font-size: 20px; line-height: 100%; letter-spacing: 0; 
+                    display: flex; justify-content: center; align-items: flex-end; text-transform: capitalize; color: rgba(24, 24, 27, 0.7);">
+                        Pack your bags and get ready</p>
+                </section>
+            </article>
+            <!-- MapPin -->
+            <figcaption
+                style="width: 34px; height: 34px; padding-top: 25px; padding-left: 750px; padding-right: 658px;">
+                <img style="width: 34px; height: 34px;" src="Icons/Blue_pin.png" alt="Magenta Pin">
+            </figcaption>
+            <!-- Container -->
+            <main
+                style="width: 1200px; height: 640px; display: flex; gap: 40px; justify-self: center; padding-bottom: 118px;">
+                <!-- Left container -->
+                <section style="width: 513px; height: 640px;">
+                    <!-- Day 1 -->
+                    <time class="Day1"
+                        style="width: 513px; height: 112px; margin-bottom: 20px; border-radius: 120px; display: flex; align-items: center; justify-content: space-between; background-color: #EEE9D9; ">
+                        <!-- Location info -->
+                        <div style="width: 217px; height: 48px; padding-left: 30px;">
+                            <!-- Location name -->
+                            <div style="width: 217px; height: 29px; font-family: Inter; font-weight: 500; font-size: 24px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end;
+                                    color: #09090B;">Sukhbaatar square</div>
+                            <!-- Location details -->
+                            <div style="width: 94px; height: 15px; padding-top: 4px; display: flex;">
+                                <!-- Icon -->
+                                <div style="width: 14px; height: 14px; padding-right: 12px;">
+                                    <img style="width: 14px; height: 14px" src="Icons/Black_pin.png" alt="Black_pin">
+                                </div>
+                                <!-- Location region -->
+                                <div
+                                    style="width: 68px; height: 15px; font-family: Montserrat; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #18181B;">
+                                    Ulaanbator</div>
+                            </div>
+                        </div>
+                        <!-- Day container -->
+                        <div style="width: 52px; height: 52px; padding-right: 30px;">
+                            <div style="width: 52px; height: 52px; border-radius: 26px; background-color: #F7F6F3; ">
+                                <div
+                                    style="width: 40px; height: 16px; padding-top: 18px; padding-left: 8px; font-family: sans-serif;
+                                font-weight: 500; font-size: 14px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end; color: #000000;">
+                                    DAY 1</div>
+
+                            </div>
+                        </div>
+                        <div class="Sukhbaatar"
+                            style="width: 245.34px; height: 245px; position: absolute; top: 329px; right: 142.24px;">
+                            <img style="width: 245.34px; height: 245px; rotate: 5;" src="Pin/Pin_Sukhbaatar_statue.png"
+                                alt="Pin_Sukhbaatar_statue">
+                        </div>
+                    </time>
+                    <!-- Day 2 -->
+                    <time class="Day2"
+                        style="width: 513px; height: 112px; margin-bottom: 20px; border-radius: 120px; display: flex; align-items: center; justify-content: space-between; background-color: rgba(139, 184, 193, 0.8); ">
+                        <!-- Location info -->
+                        <div style="width: 316px; height: 48px; padding-left: 30px;">
+                            <!-- Location name -->
+                            <div style="width: 316px; height: 29px; font-family: Inter; font-weight: 500; font-size: 24px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end;
+                                    color: #09090B;">Amarbaysgalant monastery</div>
+                            <!-- Location details -->
+                            <div style="width: 70px; height: 15px; padding-top: 4px; display: flex;">
+                                <!-- Icon -->
+                                <div style="width: 14px; height: 14px; padding-right: 12px;">
+                                    <img style="width: 14px; height: 14px" src="Icons/Black_pin.png" alt="Black_pin">
+                                </div>
+                                <!-- Location region -->
+                                <div
+                                    style="width: 44px; height: 15px; font-family: Montserrat; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #18181B;">
+                                    Bulgan</div>
+                            </div>
+                        </div>
+                        <!-- Day container -->
+                        <div style="width: 52px; height: 52px; padding-right: 30px;">
+                            <div style="width: 52px; height: 52px; border-radius: 26px; background-color: #F7F6F3; ">
+                                <div
+                                    style="width: 40px; height: 16px; padding-top: 18px; padding-left: 8px; font-family: sans-serif;
+                                font-weight: 500; font-size: 14px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end; color: #000000;">
+                                    DAY 2</div>
+                            </div>
+                        </div>
+                        <div class="Amarbaysgalant"
+                            style="width: 245.34px; height: 245px; position: absolute; top: 218px; right: 338.24px;">
+                            <img style="width: 245.34px; height: 245px; rotate: 5;" src="Pin/Pin_Amarbaysgalant.png"
+                                alt="Pin_Amarbaysgalant">
+                        </div>
+                    </time>
+                    <!-- Day 3 -->
+                    <time class="Day3"
+                        style="width: 513px; height: 112px; margin-bottom: 20px; border-radius: 120px; display: flex; align-items: center; justify-content: space-between; background-color: rgba(170, 216, 215, 0.8); ">
+                        <!-- Location info -->
+                        <div style="width: 169px; height: 48px; padding-left: 30px;">
+                            <!-- Location name -->
+                            <div style="width: 169px; height: 29px; font-family: Inter; font-weight: 500; font-size: 24px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end;
+                                    color: #09090B;">Khorgiin togoo</div>
+                            <!-- Location details -->
+                            <div style="width: 89px; height: 15px; padding-top: 4px; display: flex;">
+                                <!-- Icon -->
+                                <div style="width: 14px; height: 14px; padding-right: 12px">
+                                    <img style="width: 14px; height: 14px" src="Icons/Black_pin.png" alt="Black_pin">
+                                </div>
+                                <!-- Location region -->
+                                <div
+                                    style="width: 63px; height: 15px; font-family: Montserrat; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #18181B;">
+                                    Arkhangai</div>
+                            </div>
+                        </div>
+                        <!-- Day container -->
+                        <div style="width: 52px; height: 52px; padding-right: 30px;">
+                            <div style="width: 52px; height: 52px; border-radius: 26px; background-color: #F7F6F3; ">
+                                <div
+                                    style="width: 40px; height: 16px; padding-top: 18px; padding-left: 8px; font-family: sans-serif;
+                                font-weight: 500; font-size: 14px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end; color: #000000;">
+                                    DAY 3</div>
+                            </div>
+                        </div>
+                        <div class="Khorgiin_togoo"
+                            style="width: 245.34px; height: 245px; position: absolute; top: 346px; right: 471.24px;">
+                            <img style="width: 245.34px; height: 245px; rotate: 5;" src="Pin/Pin_Khorgiin_togoo.png"
+                                alt="Pin_Khorgiin_togoo">
+                        </div>
+                    </time>
+                    <!-- Day 4 -->
+                    <time class="Day4"
+                        style="width: 513px; height: 112px; margin-bottom: 20px; border-radius: 120px; display: flex; align-items: center; justify-content: space-between; background-color: rgba(139, 192, 189, 0.8); ">
+                        <!-- Location info -->
+                        <div style="width: 243px; height: 48px; padding-left: 30px;">
+                            <!-- Location name -->
+                            <div style="width: 243px; height: 29px; font-family: Inter; font-weight: 500; font-size: 24px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end;
+                                    color: #09090B;">Terkhiin tsagaan lake</div>
+                            <!-- Location details -->
+                            <div style="width: 89px; height: 15px; padding-top: 4px; display: flex;">
+                                <!-- Icon -->
+                                <div style="width: 14px; height: 14px; padding-right: 12px">
+                                    <img style="width: 14px; height: 14px" src="Icons/Black_pin.png" alt="Black_pin">
+                                </div>
+                                <!-- Location region -->
+                                <div
+                                    style="width: 63px; height: 15px; font-family: Montserrat; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #18181B;">
+                                    Arkhangai</div>
+                            </div>
+                        </div>
+                        <!-- Day container -->
+                        <div style="width: 52px; height: 52px; padding-right: 30px;">
+                            <div style="width: 52px; height: 52px; border-radius: 26px; background-color: #F7F6F3; ">
+                                <div
+                                    style="width: 40px; height: 16px; padding-top: 18px; padding-left: 8px; font-family: sans-serif;
+                                font-weight: 500; font-size: 14px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end; color: #000000;">
+                                    DAY 4</div>
+                            </div>
+                        </div>
+                        <div class="Terkhiin_tsagaan"
+                            style="width: 245.34px; height: 245px; position: absolute; top: 180px; right: 522.24px;">
+                            <img style="width: 245.34px; height: 245px; rotate: 5;" src="Pin/Pin_Terkhiin_tsagaan.png"
+                                alt="Pin_Terkhiin_tsagaan">
+                        </div>
+                    </time>
+                    <!-- Day 5 -->
+                    <time class="Day5"
+                        style="width: 513px; height: 112px; border-radius: 120px; display: flex; align-items: center; justify-content: space-between; background-color: rgba(151, 204, 224, 0.8); ">
+                        <!-- Location info -->
+                        <div style="width: 160px; height: 48px; padding-left: 30px;">
+                            <!-- Location name -->
+                            <div style="width: 160px; height: 29px; font-family: Inter; font-weight: 500; font-size: 24px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end;
+                                    color: #09090B;">Khuvsgul lake</div>
+                            <!-- Location details -->
+                            <div style="width: 83px; height: 15px; padding-top: 4px; display: flex;">
+                                <!-- Icon -->
+                                <div style="width: 14px; height: 14px; padding-right: 12px">
+                                    <img style="width: 14px; height: 14px" src="Icons/Black_pin.png" alt="Black_pin">
+                                </div>
+                                <!-- Location region -->
+                                <div
+                                    style="width: 57px; height: 15px; font-family: Montserrat; font-weight: 400; font-size: 12px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #18181B;">
+                                    Khuvsgul</div>
+                            </div>
+                        </div>
+                        <!-- Day container -->
+                        <div style="width: 52px; height: 52px; padding-right: 30px;">
+                            <div style="width: 52px; height: 52px; border-radius: 26px; background-color: #F7F6F3; ">
+                                <div
+                                    style="width: 40px; height: 16px; padding-top: 18px; padding-left: 8px; font-family: sans-serif;
+                                font-weight: 500; font-size: 14px; line-height: 100%; letter-spacing: 0%; display: flex; align-items: flex-end; color: #000000;">
+                                    DAY 5</div>
+
+                            </div>
+                        </div>
+                        <div class="Khuvsgul"
+                            style="width: 245.34px; height: 245px; position: absolute; top: 184px; right: 355.24px;">
+                            <img style="width: 245.34px; height: 245px; rotate: 5;" src="Pin/Pin_Khuvsgul_lake.png"
+                                alt="Pin_Khuvsgul_lake">
+                        </div>
+                    </time>
+                </section>
+                <!-- Rigth container (4 MapPins) -->
+                <aside style="width: 647px; height: 640px; position: relative;">
+                    <figcaption
+                        style="width: 34px; height: 34px; position: absolute; top: 164px; left: 107px; z-index: 0;">
+                        <img style="width: 34px; height: 34px;" src="Icons/Blue_pin.png" alt="Magenta Pin">
+                    </figcaption>
+                    <figcaption
+                        style="width: 34px; height: 34px; position: absolute; top: 42px; left: 279px; z-index: 0;">
+                        <img style="width: 34px; height: 34px;" src="Icons/Blue_pin.png" alt="Magenta Pin">
+                    </figcaption>
+                    <figcaption
+                        style="width: 34px; height: 34px; position: absolute; top: 416px; left: 279px; z-index: 0;">
+                        <img style="width: 34px; height: 34px;" src="Icons/Blue_pin.png" alt="Magenta Pin">
+                    </figcaption>
+                    <figcaption
+                        style="width: 34px; height: 34px; position: absolute; top: 181px; right: 121px; z-index: 0;">
+                        <img style="width: 34px; height: 34px;" src="Icons/Blue_pin.png" alt="Magenta Pin">
+                    </figcaption>
+                </aside>
+            </main>
+        </section>
+
+        <!-- Price and footer -->
+        <section
+            style="width: 1440px; height: 1120px; background: url(Price&Footer\ image.png); margin-left: auto; margin-right: auto;">
+            <!-- title container -->
+            <article style="width: 1440px; height: 85px; padding-top: 40px;">
+                <div class="Pricing" style="width: 1440px; height: 51px;">Pricing of Our Agency</div>
+                <div class="Package" style="width: 1440px; height: 24px; padding-top: 10px;">Choose a package that’s
+                    right for you</div>
+
+            </article>
+            <!-- Card container -->
+            <summary
+                style="width: 1200px; height: 527px; display: flex; gap: 24px; padding-top: 79px; justify-self: center;">
+
+                <!-- Budget -->
+                <div class="Budget"
+                    style="width: 384px; height: 527px; border-radius: 40px; background-color: #FAFBFC;">
+                    <!-- Header -->
+                    <div style="width: 384px; height: 92px; display: flex;align-items: center;">
+                        <img style="width: 36px; height: 36px; padding-top: 32px; padding-bottom: 24px; padding-left: 24px; padding-right: 16px;"
+                            src="Icons/Black_heart.png" alt="Heart">
+                        <h1
+                            style="padding-top: 39px; padding-bottom: 31px; margin: 0; font-family: Inter; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0; display: flex; align-items: center; color: rgba(18, 19, 22, 1);">
+                            Budget Package</h1>
+                    </div>
+
+                    <!-- Content -->
+                    <div style="width: 384px; height: 435px;">
+                        <!-- Details -->
+                        <div
+                            style="width: 336px; height: 290px; justify-self: center; padding-top: 12px; padding-bottom: 37px;">
+                            <!-- Price section -->
+                            <div style="width: 336px; height: 78px; padding-bottom: 32px;">
+                                <div
+                                    style="width: 336px; height: 49px; padding-bottom: 10px; font-family: Montserrat; font-weight: 600; font-size: 40px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #303030;">
+                                    500$</div>
+                                <div
+                                    style="width: 336px; height: 19px; font-family: Inter; font-weight: 500; font-size: 16px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #919191;">
+                                    Essentials Covered</div>
+
+                            </div>
+                            <!-- Container2 -->
+                            <div style="width: 336px; height: 180px;">
+                                <!-- Includes -->
+                                <div
+                                    style="width: 336px; height: 22px; display: flex; justify-content: center; padding-bottom: 16px;">
+                                    <div
+                                        style="width: 256px; height: 22px; font-family: Inter; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #121316;">
+                                        Includes:</div>
+                                </div>
+                                <!-- Contents -->
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">Group transportation
+                                        (shared van/bus)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 34px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 34px;">Standard accommodation
+                                        (yurt or guesthouse)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">Guided lake tour</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">1 meal per day
+                                        (breakfast)</div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- Button -->
+                        <Button class="Budget_button"
+                            style="width: 336px; height: 48px; border-radius: radius/rounded-full; border: 0; display: flex; align-items: center; justify-content: center; justify-self: center; border-radius: 9999px">
+                            <div
+                                style="width: 157px; height: 48px; display: flex; justify-content: center; align-items: center; ">
+                                <div class="Budget_select_package"
+                                    style="width: 125px; height: 24px; display: flex; justify-content: center; align-items: center; font-family: Inter; font-weight: 600; font-size: 16px; line-height: 20px; letter-spacing: -1%; ">
+                                    Select package</div>
+                            </div>
+                        </Button>
+
+                    </div>
+
+                </div>
+                <!-- Standard -->
+                <div class="Standard"
+                    style="width: 384px; height: 527px; border-radius: 40px; background-color: #FAFBFC;">
+                    <!-- Header -->
+                    <div style="width: 384px; height: 92px; display: flex;align-items: center;">
+                        <img style="width: 36px; height: 36px; padding-top: 32px; padding-bottom: 24px; padding-left: 24px; padding-right: 16px;"
+                            src="Icons/Black_heart.png" alt="Heart">
+                        <h1
+                            style="padding-top: 39px; padding-bottom: 31px; margin: 0; font-family: Inter; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0; display: flex; align-items: center; color: rgba(18, 19, 22, 1);">
+                            Standard Package</h1>
+                    </div>
+
+                    <!-- Content -->
+                    <div style="width: 384px; height: 435px;">
+                        <!-- Details -->
+                        <div
+                            style="width: 336px; height: 290px; justify-self: center; padding-top: 12px; padding-bottom: 37px;">
+                            <!-- Price section -->
+                            <div style="width: 336px; height: 78px; padding-bottom: 32px;">
+                                <div
+                                    style="width: 336px; height: 49px; padding-bottom: 10px; font-family: Montserrat; font-weight: 600; font-size: 40px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #303030;">
+                                    800$</div>
+                                <div
+                                    style="width: 336px; height: 27px; display: flex; align-items: center; justify-content: space-between;">
+                                    <div
+                                        style="width: 235px; height: 19px;  font-family: Inter; font-weight: 500; font-size: 16px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #919191;">
+                                        Balanced Adventure</div>
+                                    <div
+                                        style="width: 91px; height: 27px; border-radius: 9999px; display: flex; align-items: center; justify-content: center; background-color: #6972B5;">
+                                        <div
+                                            style="width: 59px; height: 19px; font-family: Inter; font-weight: 500; font-size: 16px; color: #FAFBFC;">
+                                            Popular</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Container2 -->
+                            <div style="width: 336px; height: 180px;">
+                                <!-- Includes -->
+                                <div
+                                    style="width: 336px; height: 22px; display: flex; justify-content: center; padding-bottom: 16px;">
+                                    <div
+                                        style="width: 256px; height: 22px; font-family: Inter; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #121316;">
+                                        Includes:</div>
+                                </div>
+                                <!-- Contents -->
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">Comfortable
+                                        transportation (mini-bus)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 34px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 34px;">Mid-range accommodation
+                                        (private yurt or lodge)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">Guided lake tour + nearby
+                                        hiking</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">2 meals per day
+                                        (breakfast and dinner)</div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- Button -->
+                        <Button class="Standard_button"
+                            style="width: 336px; height: 48px; border-radius: radius/rounded-full; border: 0; display: flex; align-items: center; justify-content: center; justify-self: center; border-radius: 9999px">
+                            <div
+                                style="width: 157px; height: 48px; display: flex; justify-content: center; align-items: center; ">
+                                <div class="Standard_select_package"
+                                    style="width: 125px; height: 24px; display: flex; justify-content: center; align-items: center; font-family: Inter; font-weight: 600; font-size: 16px; line-height: 20px; letter-spacing: -1%;">
+                                    Select package</div>
+                            </div>
+                        </Button>
+
+                    </div>
+
+                </div>
+                <!-- Luxury -->
+                <div class="Luxury"
+                    style="width: 384px; height: 527px; border-radius: 40px; background-color: #FAFBFC;">
+                    <!-- Header -->
+                    <div style="width: 384px; height: 92px; display: flex;align-items: center;">
+                        <img style="width: 36px; height: 36px; padding-top: 32px; padding-bottom: 24px; padding-left: 24px; padding-right: 16px;"
+                            src="Icons/Black_heart.png" alt="Heart">
+                        <h1
+                            style="padding-top: 39px; padding-bottom: 31px; margin: 0; font-family: Inter; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0; display: flex; align-items: center; color: rgba(18, 19, 22, 1);">
+                            Luxury Package</h1>
+                    </div>
+
+                    <!-- Content -->
+                    <div style="width: 384px; height: 435px;">
+                        <!-- Details -->
+                        <div
+                            style="width: 336px; height: 290px; justify-self: center; padding-top: 12px; padding-bottom: 37px;">
+                            <!-- Price section -->
+                            <div style="width: 336px; height: 78px; padding-bottom: 32px;">
+                                <div
+                                    style="width: 336px; height: 49px; padding-bottom: 10px; font-family: Montserrat; font-weight: 600; font-size: 40px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #303030;">
+                                    1200$</div>
+                                <div
+                                    style="width: 336px; height: 19px; font-family: Inter; font-weight: 500; font-size: 16px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #919191;">
+                                    Ultimate Comfort</div>
+
+                            </div>
+                            <!-- Container2 -->
+                            <div style="width: 336px; height: 180px;">
+                                <!-- Includes -->
+                                <div
+                                    style="width: 336px; height: 22px; display: flex; justify-content: center; padding-bottom: 16px;">
+                                    <div
+                                        style="width: 256px; height: 22px; font-family: Inter; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0; display: flex; align-items: flex-end; color: #121316;">
+                                        Includes:</div>
+                                </div>
+                                <!-- Contents -->
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center;"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">Private transportation
+                                        (SUV)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">Luxury accommodation
+                                        (lakefront lodge)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 34px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 34px;">Guided tours (lake +
+                                        reindeer herder experience)</div>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; width: 336px; height: 20px; padding-bottom: 16px;">
+                                    <img style="padding-right: 20px; width: 20px; height: 20px; display: flex; justify-content: center; align-items: center"
+                                        src="Icons/Check.png" alt=Check">
+                                    <div class="Item_text" style="width: 296px; height: 17px;">All meals included (local
+                                        cuisine)</div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <!-- Button -->
+                        <Button class="Luxury_button"
+                            style="width: 336px; height: 48px; border-radius: radius/rounded-full; border: 0; display: flex; align-items: center; justify-content: center; justify-self: center; border-radius: 9999px">
+                            <div
+                                style="width: 157px; height: 48px; display: flex; justify-content: center; align-items: center; ">
+                                <div class="Luxury_select_package"
+                                    style="width: 125px; height: 24px; display: flex; justify-content: center; align-items: center; font-family: Inter; font-weight: 600; font-size: 16px; line-height: 20px; letter-spacing: -1%;">
+                                    Select package</div>
+                            </div>
+                        </Button>
+
+                    </div>
+
+                </div>
+
+            </summary>
+            <!-- End (FB, IG, logo) -->
+            <footer
+                style="width: 1440px; height: 204px; display: flex; justify-content: center; align-items: center; padding-top: 185px;">
+                <div
+                    style="width: 1200px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+                    <div
+                        style="width: 358px; height: 44px; display: flex; align-items: center; justify-content: space-between;">
+                        <!-- Facebook -->
+                        <div
+                            style="width: 167px; height: 44px; display: flex; justify-content: center; align-items: center; background-color: #FAFBFC; border-radius: 9999px;">
+                            <div
+                                style="width: 24px; height: 24px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
+                                <img style="width: 20.16px; height: 20.16px;" src="Icons/Facebook Icon.png" alt="FB">
+                            </div>
+                            <div class="Social" style="width: 93px; height: 22px;">Facebook</div>
+                        </div>
+                        <!-- Instagram -->
+                        <div
+                            style="width: 171px; height: 44px; display: flex; justify-content: center; align-items: center; background-color: #FAFBFC; border-radius: 9999px;">
+                            <div
+                                style="width: 24px; height: 24px; padding-right: 10px; display: flex; justify-content: center; align-items: center;">
+                                <img style="width: 21.12px; height: 21.12px;" src="Icons/Instagram Icon.png" alt="IG">
+                            </div>
+                            <div class="Social" style="width: 97px; height: 22px;">Instagram</div>
+                        </div>
+                    </div>
+                    <div
+                        style="width: 101px; height: 35px; display: flex; justify-content: center; align-items: center;">
+                        <img style="width: 101px; height: 35px;" src="Icons/logo 1.png" alt="Tour">
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
